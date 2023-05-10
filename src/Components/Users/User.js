@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setText } from '../../Store/userSlice'
 
 const User = () => {
-    const {data:users, isLoading, isFetching}=useGetUserPostsQuery()
+    const {data:users}=useGetUserPostsQuery()
     const {text} = useSelector(state=>state.users)
     const dispatch=useDispatch()
     console.log(users);
